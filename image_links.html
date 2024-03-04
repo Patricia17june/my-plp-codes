@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .section {
+            flex-basis: 30%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .section h2 {
+            margin-bottom: 10px;
+        }
+        .section img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 10px;
+        }
+        .gallery a {
+            display: block;
+            text-align: center;
+        }
+        .menu {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Image Links</h1>
+
+    <div class="container">
+        <div class="section">
+            <h2>Home</h2>
+            <p>Welcome to our website! Here's a linked image related to technology:</p>
+            <a href="https://technology.com/technology1" target="_blank">
+                <img src="https://images.pexels.com/photos/726233/pexels-photo-726233.jpeg?auto=compress&cs=tinysrgb&w=600300" alt="Technology">
+            </a>
+        </div>
+        <div class="section">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <a href="https://example.com/nature1" target="_blank"><img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Nature 1"></a>
+                <a href="https://example.com/nature2" target="_blank"><img src="https://images.pexels.com/photos/364086/pexels-photo-364086.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Nature 2"></a>
+                <a href="https://example.com/nature3" target="_blank"><img src="https://images.pexels.com/photos/2832050/pexels-photo-2832050.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Nature 3"></a>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Menu</h2>
+            <ul class="menu">
+                <li><a href="https://images.pexels.com/photos/885021/pexels-photo-885021.jpeg?auto=compress&cs=tinysrgb&w=300/food1" target="_blank">coffee</a></li>
+                <li><a href="https://images.pexels.com/photos/1639567/pexels-photo-1639567.jpeg?auto=compress&cs=tinysrgb&w=300/food2" target="_blank">cake</a></li>
+                <li><a href="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=300/food3" target="_blank">Burger</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
